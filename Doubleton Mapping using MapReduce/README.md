@@ -6,7 +6,7 @@
 The original data is stored in transaction.dat. Each line is a transaction containing multiple items separated by space (item1 item2 item3 · · · itemn)
 The input file was stored on Amazon S3.
 
-*** The scripts are run on EMR cluster ***
+***The scripts are run on EMR cluster***
 ### The mapper class
 The map function would take this original file and generate an intermediate output. The input key would be line number in input file. The input value would be the content in each line. The output key would be the doubleton itemsets. The output value is 1.
 ***For example:***
